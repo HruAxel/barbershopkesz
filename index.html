@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery-3.7.0.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Fondamento:ital@1&family=MonteCarlo&family=Roboto:wght@100&display=swap');
+    </style>
+    <title>Barber Shop</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <nav>
+                <div class="hidden"><a href="#scroll_0" class="line">Rólunk</a></div>
+                <div class="hidden"><a href="#scroll_1" class="line">Borbélyaink</a></div>
+                <div>
+                    <h1 id="logo">BARBER SHOP</h1>
+                </div>
+                <div class="hidden"><a href="#scroll_2" class="line">Árak</a></div>
+                <div class="hidden"><a href="#scroll_3" class="line">Időpontfoglalás</a></div>
+            </nav>
+        </div>
+        <div id="scroll_0"></div>
+        <div class="content">
+            <content>
+                <div class="section_1">
+                    <div class="picture_1">
+                        <img src="pictures/barber.jpeg" id="picture_one" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Üdvözöllek a Barber Shop honlapján! <br><br>Egyedi stílus, klasszikus elegancia és a
+                            hagyományos borbélymesterség művészete - mindezt megtalálod nálunk a Barber Shop-ban.
+                            Büszkén nyitottuk meg kapuinak 1985-ben, és azóta is elkötelezettek vagyunk abban, hogy
+                            ügyfeleinknek a legmagasabb minőségű fodrászati és borotválkozási élményt nyújtsuk.</p>
+                    </div>
+                </div>
+                <div class="section_2">
+                    <div class="text_2">
+                        <p>Barbershopunk egy hely, ahol nem csak hajat és szakállat ápolunk, hanem közösséget építünk.
+                            Mi nem csak fodrászok vagyunk, hanem történetmesélők, és minden egyes vendégünk egy egyedi
+                            történetet hordoz magával. Az évek során oly sok férfi és fiú lépte be nálunk az ajtót, és
+                            hagyta ránk a bizalmát, hogy gondoskodjunk a megjelenéséről. Mindig is arra törekedtünk,
+                            hogy többet adjunk, mint egyszerűen egy fodrászati szolgáltatás, hanem egy felejthetetlen
+                            élményt nyújtsunk.</p>
+                    </div>
+                    <div class="picture_2">
+                        <img src="pictures/barber_2.jpeg" id="picture_two" alt="">
+                    </div>
+                </div>
+                <div id="scroll_1"></div>
+                <div class="section_3">
+                    <h2>- Borbélyaink -</h2>
+                    <div class="cards">
+                        <div class="card_1">
+                            <a href="pictures/barbers/Balázs.jpeg"><img src="pictures/barbers/Balázs.jpeg" id="balazs"
+                                    alt=""></a>
+                            <div class="jpg_text_balazs">
+                                <p style="text-transform: uppercase;">Balázs</p>
+                            </div>
+                        </div>
+                        <div class="card_2">
+                            <a href="pictures/barbers/Amanda.jpeg"><img src="pictures/barbers/Amanda.jpeg" id="amanda"
+                                    alt=""></a>
+                            <div class="jpg_text_amanda">
+                                <p style="text-transform: uppercase;">Amanda</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="zoombg">
+                        <img />
+                    </div>
+                </div>
+                <div id="scroll_2"></div>
+                <div class="section_4">
+                    <h2>- Árak -</h2>
+                    <div class="price_table">
+                        <table>
+                            <tr>
+                                <th>HAJVÁGÁS</th>
+                                <th>4500,-FT / 12 €</th>
+                            </tr>
+                            <tr>
+                                <th>GYERMEK HAJVÁGÁS</th>
+                                <th>3500,-FT / 10 €</th>
+                            </tr>
+                            <tr>
+                                <th>HAJFESTÉS, ŐSZHAJ FEDÉS</th>
+                                <th>3000,-FT / 8.5 €</th>
+                            </tr>
+                            <tr>
+                                <th>EGY HOSSZ HAJVÁGÁS, SZAKÁLL IGAZÍTÁS</th>
+                                <th>6000,-FT /17 €</th>
+                            </tr>
+                            <tr>
+                                <th>KREATÍV HAJVÁGÁS</th>
+                                <th>6000,-FT / 17 €</th>
+                            </tr>
+                            <tr>
+                                <th>BARBER TREATMENT</th>
+                                <th>8000,-FT / 22 €</th>
+                            </tr>
+                            <tr>
+                                <th>BOROTVÁLÁS</th>
+                                <th>4500,-FT / 12 €</th>
+                            </tr>
+                            <tr>
+                                <th>SZAKÁLL PENGÉS/GÉPI IGAZÍTÁS</th>
+                                <th>3500,-FT / 10 €</th>
+                            </tr>
+                            <tr>
+                                <th>SZAKÁLLFESTÉS</th>
+                                <th>2500,-FT / 7 €</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="scroll_3"></div>
+                <div class="section_5">
+                    <h2 id="idopont">- Időpontfoglalás -</h2>
+                    <div class="input_area">
+                        <form action="">
+                            <input type="name" name="user_name" id="user_name" placeholder="Név">
+                            <input type="email" name="email" id="email" placeholder="E-mail cím">
+                            <input type="datetime-local" name="date_time" id="date_time" min="">
+                            <input list="barber" id="barbers" placeholder="Válassz borbélyt!">
+                            <datalist id="barber">
+                                <option value="Balázs"></option>
+                                <option value="Amanda"></option>
+                            </datalist>
+                            <input list="services" id="service" placeholder="Válassz szolgáltatást!">
+                            <datalist id="services">
+                                <option value="HAJVÁGÁS"></option>
+                                <option value="GYERMEK HAJVÁGÁS"></option>
+                                <option value="HAJFESTÉS, ŐSZHAJ FEDÉS"></option>
+                                <option value="EGY HOSSZ HAJVÁGÁS, SZAKÁLL IGAZÍTÁ"></option>
+                                <option value="KREATÍV HAJVÁGÁS"></option>
+                                <option value="BARBER TREATMENT"></option>
+                                <option value="BOROTVÁLÁS"></option>
+                                <option value="SZAKÁLL PENGÉS/GÉPI IGAZÍTÁS"></option>
+                                <option value="SZAKÁLLFESTÉS"></option>
+                            </datalist>
+                            <button>Foglalás</button>
+                        </form>
+                    </div>
+                    <div id="info_window">
+                        <div class="sing_info">
+                            <div id="close">
+                                <a href="">X</a>
+                            </div>
+                            <div class="info_container">
+                                <p id="info"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </content>
+        </div>
+        <div class="footer">
+            <p id="footer_text"><small>Copyright © www.barbershop.com</small></p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
